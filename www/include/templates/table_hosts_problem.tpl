@@ -23,6 +23,7 @@
    <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=ack_host&host=`$item.name1`"}">A</a>
    <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=dis_host&host=`$item.name1`"}">D</a>
    <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=en_host&host=`$item.name1`"}">E</a>
+   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=rsched_host&host=`$item.name1`"}">R</a>
  </td>
 <tr/>
 {/foreach}

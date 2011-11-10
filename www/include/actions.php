@@ -15,7 +15,7 @@ function nagios_cmd() {
 	switch ($action) {
 	case 'ack_service':
 		$commandstring="[$now] ACKNOWLEDGE_SVC_PROBLEM;$host;$service;1;1;1;nagiosadmin;Ack_Via_NagiosNG";
-		system("echo \"$commandstring\" $now > $commandfile");
+		system("echo \"$commandstring\" > $commandfile");
 		echo "Acknowledge service problem $host/$service.";
 		break;
 	case 'dis_service':
@@ -33,9 +33,14 @@ function nagios_cmd() {
 		system("echo \"$commandstring\" > $commandfile");
 		echo "Reinit OK service $host/$service.";
 		break;
+	case 'rsched_service':
+		$commandstring="[$now] SCHEDULE_SVC_CHECK;$host;$service;$now";
+		system("echo \"$commandstring\" > $commandfile");
+		echo "Reschedule service $host/$service.";
+		break;
 	case 'ack_host':
 		$commandstring="[$now] ACKNOWLEDGE_HOST_PROBLEM;$host;1;1;1;nagiosadmin;Ack_Via_NagiosNG";
-		system("echo \"$commandstring\" $now > $commandfile");
+		system("echo \"$commandstring\" > $commandfile");
 		echo "Acknowledge host problem $host.";
 		break;
 	case 'dis_host':
@@ -45,6 +50,11 @@ function nagios_cmd() {
 		break;
 	case 'en_host':
 		$commandstring="[$now] ENABLE_HOST_CHECK;$host";
+		system("echo \"$commandstring\" > $commandfile");
+		echo "Enable host $host.";
+		break;
+	case 'rsched_host':
+		$commandstring="[$now] SCHEDULE_HOST_CHECK;$host;$now";
 		system("echo \"$commandstring\" > $commandfile");
 		echo "Enable host $host.";
 		break;

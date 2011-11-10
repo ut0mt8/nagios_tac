@@ -24,6 +24,7 @@
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=dis_service&host=`$item.name1`&service=`$item.name2`"}">D</a> 
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=en_service&host=`$item.name1`&service=`$item.name2`"}">E</a> 
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=ok_service&host=`$item.name1`&service=`$item.name2`"}">O</a> 
+  <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=rsched_service&host=`$item.name1`&service=`$item.name2`"}">R</a>
  </td>
 <tr/>
 {/foreach}
@@ -40,6 +41,7 @@
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=dis_service&host=`$item.name1`&service=`$item.name2`"}">D</a> 
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=en_service&host=`$item.name1`&service=`$item.name2`"}">E</a> 
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=ok_service&host=`$item.name1`&service=`$item.name2`"}">O</a> 
+  <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=rsched_service&host=`$item.name1`&service=`$item.name2`"}">R</a>
  </td>
 <tr/>
 {/foreach}
@@ -56,6 +58,7 @@
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=dis_service&host=`$item.name1`&service=`$item.name2`"}">D</a> 
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=en_service&host=`$item.name1`&service=`$item.name2`"}">E</a> 
   <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=ok_service&host=`$item.name1`&service=`$item.name2`"}">O</a> 
+  <a class="click" href="#" onclick="{ajax_update update_id="status_bar" function="nagios_cmd" params="action=rsched_service&host=`$item.name1`&service=`$item.name2`"}">R</a>
  </td>
 <tr/>
 {/foreach}
