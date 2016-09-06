@@ -1,5 +1,5 @@
 Nagios Tactical Overview Reloaded
-works with NDO or Livesatus
+works with Livesatus (NDO was deprecated)
 
 RMZ - 2008/2016
 
